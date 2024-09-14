@@ -19,7 +19,6 @@ int main() {
     return 1;
   }
 
-  char input[BUFFER_SIZE];
   int x_values[NUM_VALUES];
   int y_values[NUM_VALUES];
   size_t i = 0, j = 0;
@@ -90,6 +89,7 @@ int main() {
   fprintf(file, "\n- Point-Slope: y - %d = %.2f(x - %d)\n", y_first_term, slope, x_first_term);
   printf("\nPoint-Slope: y - %d = %.2f(x - %d)\n", y_first_term, slope, x_first_term);
 
+  fflush(file);
   fclose(file);
 
   return 0;
